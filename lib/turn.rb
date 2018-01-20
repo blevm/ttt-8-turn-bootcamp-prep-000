@@ -41,4 +41,3 @@ def turn
   choice = gets.strip
   input_to_index(choice)
 end
-end
