@@ -35,8 +35,3 @@ def move(board, position, player = "X")
   update_array_at_with(board, position, player)
   display_board(board)
 end
-
-
-
-
-
