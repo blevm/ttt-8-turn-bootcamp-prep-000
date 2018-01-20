@@ -44,7 +44,6 @@ def turn(board)
     move(board, position, player = "X")
     display_board(board)
   else
-    puts "Invalid selection. Please enter 1-9:"
-    choice = gets.strip
+    turn(board)
   end
 end
