@@ -39,8 +39,11 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   choice = gets.strip
-  if (!position_taken?(board, input_to_index(choice)) && valid_move?(board, input_to_index(choice)))
-    move(board, input_to_index(choice), player = "X")
+  position = input_to_index(choice)
+  if (!position_taken?(board, position) && valid_move?(board, position))
+    move(board, position, player = "X")
     display_board(board)
+  else 
+    puts "Invalid selection. Please enter 1-9:"
   end
 end
