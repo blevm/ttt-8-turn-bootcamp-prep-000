@@ -35,3 +35,10 @@ def move(board, position, player = "X")
   update_array_at_with(board, position, player)
   display_board(board)
 end
+
+def turn 
+  puts Please enter 1-9:
+  choice = gets.strip
+  input_to_index(choice)
+  
+end  
