@@ -45,5 +45,6 @@ def turn(board)
     display_board(board)
   else
     puts "Invalid selection. Please enter 1-9:"
+    choice = gets.strip
   end
 end
