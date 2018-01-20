@@ -43,7 +43,7 @@ def turn(board)
   if (!position_taken?(board, position) && valid_move?(board, position))
     move(board, position, player = "X")
     display_board(board)
-  else 
+  else
     puts "Invalid selection. Please enter 1-9:"
   end
 end
