@@ -43,5 +43,5 @@ def turn(board)
   if (!position_taken?(board, index) && valid_move?(board, index))
     move(board, input_to_index(choice), player = "X")
     display_board(board)
-  end  
+  end
 end
